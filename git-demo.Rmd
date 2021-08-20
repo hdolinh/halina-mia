@@ -16,7 +16,9 @@ ggplot(data = penguins, aes(x = species, y = body_mass_g)) +
   geom_violin(aes(fill = species))+
   theme_classic()+
   labs(x = "Penguin Species",
-       y = "Body Mass (g)")+
-  theme(legend.position = "none")
+       y = "Body Mass (g)",
+       title = "Distribution of Body Mass for Penguins in Antartica")+
+  theme(legend.position = "none",
+        title = element_text(face = "bold"))
 ```
 
